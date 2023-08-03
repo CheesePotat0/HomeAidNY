@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Q2: View {
     let backgroundColor = Color(red:0.929, green:0.867,blue:0.725)
+    let colorYellow = Color(red:0.890, green: 0.635, blue:0.231)
+    let colorRed = Color(hue: 0.036, saturation: 0.856, brightness: 0.844)
     @State private var textTitle = "..."
     var body: some View {
         NavigationStack {
@@ -26,18 +28,22 @@ struct Q2: View {
                         textTitle = "❌Incorrect, 20% of homeless New Yorkers are 5 or younger and approximately 22,000 children are currently homeless in New York."
                     }
                     .buttonStyle(.bordered)
+                    .tint(colorRed)
                     Button("43%") {
                         textTitle = "❌Incorrect, 20% of homeless New Yorkers are 5 or younger and approximately 22,000 children are currently homeless in New York."
                     }
                     .buttonStyle(.bordered)
+                    .tint(colorRed)
                     Button("14%") {
                         textTitle = "❌Incorrect, 20% of homeless New Yorkers are 5 or younger and approximately 22,000 children are currently homeless in New York."
                     }
                     .buttonStyle(.bordered)
+                    .tint(colorRed)
                     Button("20%") {
                         textTitle = "✅Correct! 20% of homeless New Yorkers are 5 or younger and approximately 22,000 children are currently homeless in New York."
                     }
                     .buttonStyle(.bordered)
+                    .tint(colorRed)
                     Text(textTitle)
                         .font(.title3)
                         .fontWeight(.regular)
@@ -47,6 +53,7 @@ struct Q2: View {
                     NavigationLink(destination: Q3()) {
                         Text("Next question")
                     }
+                    .tint(colorRed)
                         .padding()
 
                     Image("q2pic")

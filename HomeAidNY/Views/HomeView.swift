@@ -16,25 +16,22 @@ struct HomeView: View {
             ZStack{
                 backgroundColorBeige.ignoresSafeArea()
                 VStack (spacing: 25.0) {
-                 //   Text("HomeAidNY")
-               //         .font(.largeTitle)
-               //         .fontWeight(.medium)
-                 //       .foregroundColor(colorRed)
                     Image("HomeAidNY Logo")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
-                    Text("Homelessness is an issue that affects thousands of people in New York. \nOur app aims to: \n- Provide users with a list of what they can donate \n- Provide nearby locations where people can donate \n- Help spread information about homelessness and debunk common misconceptions")
                         .font(.title3)
                     NavigationLink(destination: Q1()) {
-                        Text("Want to learn more? Click here to take this quiz!")
+                        Text("Take this quiz to see how much you know about homelessness!")
                             .font(.title)
-                            .foregroundColor(colorYellow)
                     }
+                    
+                    .buttonStyle(.borderedProminent)
+                    .tint(colorRed)
                         .toolbar {
                             ToolbarItemGroup(placement: .status){
                                 NavigationLink(destination: AboutUsView()) {
                                     Text("About")
-                                        .foregroundColor(colorYellow)
+                                        .foregroundColor(colorRed)
                                 }
                             }
                         }
