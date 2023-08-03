@@ -12,26 +12,33 @@ struct AboutUsView: View {
     var body: some View {
         ZStack{
             backgroundColor.ignoresSafeArea()
-            VStack(alignment: .center, spacing: 20.0){
-                Text("The Developers")
-                    .font(.largeTitle)
-                //Image("")
-                Text("Ambur")
-                    .font(.title3)
-                Text("Hey there! I'm Ambur. I love to go camping and volunteer within my town.")
-                    .multilineTextAlignment(.center)
-                Text("Samantha")
-                    .font(.title3)
-                Text("Hi! I'm Samantha, a native New Yorker. I love cookies and cream ice cream, goldfish (the snack that smiles back), and bad dad jokes.")
-                    .multilineTextAlignment(.center)
-                Text("Nicole")
-                    .font(.title3)
-                Text("Nicole is very cool :D")
-                    .multilineTextAlignment(.center)
-                Text("Maya")
-                    .font(.title3)
-                Text("Maya is very cool :D")
-                    .multilineTextAlignment(.center)
+            VStack(alignment: .center, spacing: 18.0){
+                Group{
+                    Text("Our Goal")
+                        .font(.title)
+                    Text("Our app aims to: \n- Provide users with a list of what they can donate \n- Provide nearby locations where people can donate \n- Provide factual information and debunk common myths.")
+                }
+                Group{
+                    Text("The Developers")
+                        .font(.title)
+                    //Image("")
+                    Text("Ambur")
+                        .font(.title3)
+                    Text("Hey there! I'm Ambur and I live in New Jersey. I love to go camping and volunteer within my town.")
+                        .multilineTextAlignment(.center)
+                    Text("Samantha")
+                        .font(.title3)
+                    Text("Hi! I'm Samantha, a native New Yorker. I love cookies and cream ice cream, goldfish (the snack that smiles back), and bad dad jokes.")
+                        .multilineTextAlignment(.center)
+                    Text("Nicole")
+                        .font(.title3)
+                    Text("Nicole is very cool :D")
+                        .multilineTextAlignment(.center)
+                    Text("Maya")
+                        .font(.title3)
+                    Text("Hi, I'm Maya! I love to skateboard and play roleplaying games, like Murder Mystery and D&D. I have two cats.")
+                        .multilineTextAlignment(.center)
+                }
             }
             .padding()
         }

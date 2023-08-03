@@ -15,12 +15,18 @@ struct InfoView: View {
         NavigationStack{
             ZStack{
                 backgroundColor.ignoresSafeArea()
-                VStack{
+                VStack(spacing: 20.0) {
                     Text("The Problem")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                    Text("Homelessness is an issue that affects thousands of people in New York. \nOur app aims to: \n- Provide users with a list of what they can donate \n- Provide nearby locations where people can donate \n- Help spread information about homelessness and debunk common misconceptions")
-                        .padding()
+                    Text("Homelessness is an issue that affects thousands of people in New York.")
+                    Text("Our app aims to: \n- Provide users with a list of what they can donate \n- Provide nearby locations where people can donate \n- Provide factual information and debunk common myths.")
+                    NavigationLink(destination: MythView()) {
+                        Text("Click here to view common myths about homelessness.")
+                            .font(.title2)
+                }
+                    .buttonStyle(.bordered)
+                    .tint(colorRed)
                     NavigationLink(destination: Q1()) {
                         Text("Want to learn more? Click here to take this quiz!")
                             .font(.title2)
@@ -28,6 +34,7 @@ struct InfoView: View {
                     .buttonStyle(.bordered)
                     .tint(colorRed)
             }
+                .padding()
         }
     }
 }
