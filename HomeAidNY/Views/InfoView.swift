@@ -19,16 +19,9 @@ struct InfoView: View {
                     Text("The Problem")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                    Text("Homelessness is an issue that affects thousands of people in New York.")
-                    Text("Our app aims to: \n- Provide users with a list of what they can donate \n- Provide nearby locations where people can donate \n- Provide factual information and debunk common myths.")
+                    Text("Homelessness is an issue that affects thousands of people in New York. But you can do many things to help! \n \nIf you are looking for service hours, many donation centers want volunteers who sign up. \nYou can also help by donating items to donation centers. When donating items, clothes should be relatively clean and food should be unexpired. The best plan of action would be to ask your local shelter what items they need. Alternatively, some organizations sell goods and give portions to the homeless.")
                     NavigationLink(destination: MythView()) {
                         Text("Click here to view common myths about homelessness.")
-                            .font(.title2)
-                }
-                    .buttonStyle(.bordered)
-                    .tint(colorRed)
-                    NavigationLink(destination: Q1()) {
-                        Text("Want to learn more? Click here to take this quiz!")
                             .font(.title2)
                 }
                     .buttonStyle(.bordered)

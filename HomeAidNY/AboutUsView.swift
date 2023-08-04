@@ -24,7 +24,7 @@ struct AboutUsView: View {
                     //Image("")
                     Text("Ambur")
                         .font(.title3)
-                    Text("Hey there! I'm Ambur and I live in New Jersey. I love to go camping and volunteer within my town.")
+                    Text("Hey there! I'm Ambur, and I live in New Jersey. I love to go camping and volunteer within my town.")
                         .multilineTextAlignment(.center)
                     Text("Samantha")
                         .font(.title3)
@@ -32,11 +32,11 @@ struct AboutUsView: View {
                         .multilineTextAlignment(.center)
                     Text("Nicole")
                         .font(.title3)
-                    Text("Nicole is very cool :D")
+                    Text("Hey! I'm Nicole and I live on Long Island. I love to eat, dance, and hang out with friends.")
                         .multilineTextAlignment(.center)
                     Text("Maya")
                         .font(.title3)
-                    Text("Hi, I'm Maya! I love to skateboard and play roleplaying games, like Murder Mystery and D&D. I have two cats.")
+                    Text("Hi, I'm Maya! I love to skateboard, eat food, and I have two cats!")
                         .multilineTextAlignment(.center)
                 }
             }

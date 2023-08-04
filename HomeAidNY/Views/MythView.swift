@@ -17,8 +17,8 @@ struct MythView: View {
     var body: some View {
         ZStack{
             backgroundColor.ignoresSafeArea()
-            VStack(spacing: 15.0) {
-                Text("Myths & Facts")
+            VStack(spacing: 10.0) {
+                Text("Myths v.s. Facts")
                     .font(.largeTitle)
                 Text("Click on each myth to learn the truth about them.")
                 Button("Myth: Homelessness is caused because people don't want to work, not because of housing.") {
@@ -32,7 +32,7 @@ struct MythView: View {
                 .tint(colorRed)
                 Text(mythFacts2)
                 Button("Myth: People living on the streets should just go to a shelter.") {
-                    mythFacts3 = "Fact: Shelters have many rules, which can be confusing for people who have lived on the streets. Shelters are designed to fit about 100 beds in one room, and these conditions are not suited enough for people who have  PTSD or mood disorders."
+                    mythFacts3 = "Fact: Shelters have many rules, which can be confusing for people who have lived on the streets. Shelters are designed to fit about 100 beds in one room, and these conditions are not suited enough for people who have mental illnesses."
                 }
                 .tint(colorRed)
                 Text(mythFacts3)

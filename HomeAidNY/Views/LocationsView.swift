@@ -56,9 +56,6 @@ struct Manhattan: View {
                 ForEach(manhattanDonations, id: \.self) { donationCenter in
                     VStack {
                         Text("**Name:** \(donationCenter["name"] ?? "error") \n**Address:** \(donationCenter["address"] ?? "error") \n**Website:** \(donationCenter["website"] ?? "error")")
-//                        Button("Website") {
-//
-//                        }
                     }.listRowBackground(accentColor)
                         .foregroundColor(accentColor2)
                     
