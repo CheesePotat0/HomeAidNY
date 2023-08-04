@@ -12,12 +12,7 @@ struct AboutUsView: View {
     var body: some View {
         ZStack{
             backgroundColor.ignoresSafeArea()
-            VStack(alignment: .center, spacing: 18.0){
-                Group{
-                    Text("Our Goal")
-                        .font(.title)
-                    Text("Our app aims to: \n- Provide users with a list of what they can donate \n- Provide nearby locations where people can donate \n- Provide factual information and debunk common myths.")
-                }
+            VStack(alignment: .center, spacing: 20.0){
                 Group{
                     Text("The Developers")
                         .font(.title)
